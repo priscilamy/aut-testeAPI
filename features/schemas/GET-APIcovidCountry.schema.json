@@ -1,0 +1,114 @@
+{
+    "description": "esquema do GET",
+    "type": "object",
+    "required": ["updated","country","countryInfo","cases","todayCases","deaths","todayDeaths","recovered","todayRecovered",
+        "active","critical","casesPerOneMillion","deathsPerOneMillion","tests","testsPerOneMillion","population","continent",
+        "oneCasePerPeople","oneDeathPerPeople","oneTestPerPeople","activePerOneMillion","recoveredPerOneMillion",
+        "criticalPerOneMillion"],
+    "properties": {
+          "updated": {
+            "type": "number"
+          },
+          "country": {
+            "type": "string"
+          },
+          "countryInfo": {
+            "type": "object",
+            "required": ["_id","iso2","iso3","lat","long","flag"],
+            "properties": {
+                "_id": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "iso2": {
+                  "type": "string"
+                },
+                "iso3": {
+                  "type": "string"
+                },
+                "lat": {
+                  "type": "number"
+                },
+                "long": {
+                  "type": "number"
+                },
+                "flag": {
+                  "type": "string"
+                }
+            }
+          },
+          "cases": {
+            "type": "number",
+            "minimum": 0
+          },
+          "todayCases": {
+            "type": "number",
+            "minimum": 0
+          },
+          "deaths": {
+            "type": "number",
+            "minimum": 0
+          },
+          "todayDeaths": {
+            "type": "number",
+            "minimum": 0
+          },
+          "recovered": {
+            "type": "number",
+            "minimum": 0
+          },
+          "todayRecovered": {
+            "type": "number",
+            "minimum": 0
+          },
+          "active": {
+            "type": "number",
+            "minimum": 0
+          },
+          "critical": {
+            "type": "number",
+            "minimum": 0
+          },
+          "casesPerOneMillion": {
+            "type": "number",
+            "minimum": 0
+          },
+          "deathsPerOneMillion": {
+            "type": "number",
+            "minimum": 0
+          },
+          "tests": {
+            "type": "number",
+            "minimum": 0
+          },
+          "testsPerOneMillion": {
+            "type": "number",
+            "minimum": 0
+          },
+          "population": {
+            "type": "number",
+            "minimum": 0
+          },
+          "continent": {
+            "type": "string"
+          },
+          "oneCasePerPeople": {
+            "type": "number"
+          },
+          "oneDeathPerPeople": {
+            "type": "number"
+          },
+          "oneTestPerPeople": {
+            "type": "number"
+          },
+          "activePerOneMillion": {
+            "type": "number"
+          },
+          "recoveredPerOneMillion": {
+            "type": "number"
+          },
+          "criticalPerOneMillion": {
+            "type": "number"
+          }
+    }
+}
